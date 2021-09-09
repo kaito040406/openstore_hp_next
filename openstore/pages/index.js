@@ -19,7 +19,7 @@ export default function Main() {
             <a className="seiya">this page!</a>
           </Link>
         </h1>
-        <Button variant="contained" color="primary" href="#contained-buttons">
+        <Button variant="contained" color="primary" href="/posts/first-post">
           Link
         </Button>
       </Layout>

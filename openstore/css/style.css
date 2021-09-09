@@ -484,7 +484,7 @@ template {
 /* ============================================ */
 html,
 body {
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: YakuHanRP, fot-tsukuardgothic-std, "Hiragino Sans", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", Meiryo, "メイリオ", Osaka, "MS PGothic", arial, helvetica, sans-serif;
   line-height: 1.6;
   background-color: #f2f2f2;
 }
@@ -815,7 +815,6 @@ body {
 }
 
 .header-nav-list {
-  margin: 0 7%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -825,5 +824,15 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.MuiMenu-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
 }
 /*# sourceMappingURL=style.css.map */

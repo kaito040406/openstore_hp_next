@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Head from 'next/head';
 import Header from '../components/Header';
 import Layout from '../components/Common-footer';
+import Button from '@material-ui/core/Button';
 
 export default function Main() {
   return (
@@ -18,6 +19,9 @@ export default function Main() {
             <a className="seiya">this page!</a>
           </Link>
         </h1>
+        <Button variant="contained" color="primary">
+          Test
+        </Button>
       </Layout>
     </>
   );

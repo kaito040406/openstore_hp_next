@@ -15,5 +15,6 @@
 }
 
 .MuiMenu-list {
-  // display: flex;
+  display: flex;
+  flex-flow: column;
 }

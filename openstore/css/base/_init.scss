@@ -11,16 +11,24 @@ body {
 
 // containerのcss
 
-.container {
+@mixin container {
   margin: 5% 10%;
 }
 
-.container-left {
-  margin-left: 10%;
+@mixin container-left {
+  margin: 5% 0 5% 10%;
 }
 
-.container-right {
-  margin-right: 10%;
+@mixin container-right {
+  margin: 5% 10% 5% 0;
+}
+
+@mixin container-header {
+  margin: 0 10% 5% 10%;
+}
+
+@mixin container-footer {
+  margin: 5% 10% 0 10%;
 }
 
 /////////////////////////////////////////////////////////////////////////////////

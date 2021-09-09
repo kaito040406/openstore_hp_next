@@ -505,23 +505,4 @@ body {
 .container-right {
   margin-right: 10%;
 }
-
-a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-img {
-  max-width: 100%;
-  display: block;
-}
-
-.seiya {
-  color: blue;
-  font-size: 3em;
-}
 /*# sourceMappingURL=style.css.map */

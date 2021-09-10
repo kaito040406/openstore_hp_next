@@ -22,7 +22,7 @@ export default function Header() {
               <img className="header-logo" src="./image/openstore-logo.png" />
             </Link>
             {/* /////////////////// ホームボタン /////////////////// */}
-            <Button href="/" aria-controls="company-menu" aria-haspopup="true">
+            <Button href="/" aria-controls="company-menu" aria-haspopup="true" fontSize={30}>
               ホーム
             </Button>
             {/* /////////////////// ホームボタン (ここまで) /////////////////// */}

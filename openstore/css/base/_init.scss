@@ -16,6 +16,10 @@ body {
   margin: 5% 10%;
 }
 
+@mixin container-top {
+  margin: 0 0 5% 10%;
+}
+
 @mixin container-left {
   margin: 5% 0 5% 10%;
 }
@@ -25,7 +29,7 @@ body {
 }
 
 @mixin container-header {
-  margin: 0 10% 5% 10%;
+  margin: 0 10% 0 10%;
 }
 
 @mixin container-footer {

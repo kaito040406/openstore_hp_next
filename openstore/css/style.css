@@ -808,7 +808,7 @@ body {
 }
 
 .header {
-  margin: 0 10% 5% 10%;
+  margin: 0 10% 0 10%;
 }
 
 .header-logo {
@@ -851,5 +851,33 @@ body {
   font-size: 1.6em;
   color: #fff;
   background-color: #3f51b5;
+}
+
+.top {
+  background-color: #fff;
+}
+
+.top-container {
+  margin: 0 0 5% 10%;
+  padding: 5% 0;
+}
+
+.top-heading {
+  font-size: 7.8em;
+}
+
+.top-span {
+  color: #12adfc;
+}
+
+.top-text {
+  margin-bottom: 4%;
+  font-size: 2.8em;
+}
+
+.top-btn {
+  width: 18%;
+  padding: 1% 0;
+  font-size: 3em;
 }
 /*# sourceMappingURL=style.css.map */

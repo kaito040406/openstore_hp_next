@@ -4,33 +4,13 @@ import Button from '@material-ui/core/Button';
 import HeaderService from './HeaderNav/HeaderService';
 import HeaderCompany from './HeaderNav/HeaderCompany';
 import HeaderNews from './HeaderNav/HeaderNews';
-import { withStyles } from '@material-ui/styles';
 
-const MyButton = withStyles({
-  root: {
-    marginRight: 10,
-    disPlay: 'none',
-  },
-  // variant="text"のみ適応
-  text: {
-    color: '#03a9f4',
-  },
-  // variant="outlined"のみ適応
-  outlined: {
-    border: '1px solid #e65100',
-    '&:hover': {
-      background: '#ffe0b2',
-    },
-  },
-  // variant="contained"のみ適応
-  contained: {
-    color: 'white',
-    background: '#43a047',
-    '&:hover': {
-      background: '#2e7031',
-    },
-  },
-})(Button);
+// material uiのcss変更コード その１
+
+// });
+// 使用方法
+// 1:const Button = withStyles({  ~~~~~~ここ~~~~~~  })(Button); にコードを書く。
+// 2:適用したいところにvariant="~~~~"をつける。
 
 export default function Header() {
   return (
@@ -42,9 +22,9 @@ export default function Header() {
               <img className="header-logo" src="./image/openstore-logo.png" />
             </Link>
             {/* /////////////////// ホームボタン /////////////////// */}
-            <MyButton href="/" aria-controls="company-menu" aria-haspopup="true">
+            <Button href="/" aria-controls="company-menu" aria-haspopup="true">
               ホーム
-            </MyButton>
+            </Button>
             {/* /////////////////// ホームボタン (ここまで) /////////////////// */}
 
             {/* /////////////////// サービスボタン /////////////////// */}
@@ -81,11 +61,10 @@ export default function Header() {
 
             {/* /////////////////// お問い合わせボタン /////////////////// */}
             <Button
-              href="/posts/contact"
+              href="#"
               variant="contained"
               color="primary"
               className="header-btn"
-              variant="outlined"
             >
               お問い合わせ
             </Button>

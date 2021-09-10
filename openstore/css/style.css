@@ -813,6 +813,7 @@ body {
 
 .header-logo {
   width: 13%;
+  mix-blend-mode: multiply;
 }
 
 .header-nav-list {

@@ -2,6 +2,7 @@
   @include container-header();
   &-logo {
     width: 13%;
+    mix-blend-mode: multiply;
   }
   &-nav {
     &-list {

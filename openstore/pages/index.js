@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Head from 'next/head';
 import Header from '../components/Header';
+import Top from '../components/Top';
 import Layout from '../components/Common-footer';
 import Button from '@material-ui/core/Button';
 

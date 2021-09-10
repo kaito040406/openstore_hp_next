@@ -7,6 +7,7 @@ export default function Common({ children }) {
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      {/* children===index.js */}
       <div>{children}</div>
       <div>footer</div>
     </>

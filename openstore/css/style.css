@@ -484,9 +484,10 @@ template {
 /* ============================================ */
 html,
 body {
-  font-family: YakuHanRP, fot-tsukuardgothic-std, "Hiragino Sans", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", Meiryo, "メイリオ", Osaka, "MS PGothic", arial, helvetica, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, MyYuGothicM, "Yu Gothic", Meiryo, "Hiragino kaku Gothic ProN", sans-serif;
   line-height: 1.6;
   background-color: #f2f2f2;
+  font-size: 62.5%;
 }
 
 * {
@@ -824,6 +825,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-size: 1.6em;
 }
 
 .MuiMenu-list {
@@ -834,5 +836,10 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
           flex-flow: column;
+}
+
+.MuiButton-text {
+  padding: 6px 16px;
+  font-size: 1.6em;
 }
 /*# sourceMappingURL=style.css.map */

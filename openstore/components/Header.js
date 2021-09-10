@@ -1,133 +1,67 @@
 import React from 'react';
 import Link from 'next/link';
 import Button from '@material-ui/core/Button';
-import Menu from '@material-ui/core/Menu';
-// import MenuItem from '@material-ui/core/MenuItem';
+import HeaderService from './HeaderNav/HeaderService';
+import HeaderCompany from './HeaderNav/HeaderCompany';
+import HeaderNews from './HeaderNav/HeaderNews';
 
 export default function Header() {
-  const [anchorEl, setAnchorEl] = React.useState(null);
-  const [serviceEl, setServiceEl] = React.useState(null);
-
-  const handleClick = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
-
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
-
-  // const handleClick = (event) => {
-  //   setServiceEl(event.currentTarget);
-  // };
-
-  // const handleClose = () => {
-  //   setServiceEl(null);
-  // };
-
   return (
     <>
       <section className="header">
         <div className="header-nav">
           <ul className="header-nav-list">
             <Link href="/">
-              <img className="header-logo" src="./image/openstore-logo.png" />
+              <img className="header-logo" src="../image/openstore-logo.png" />
             </Link>
-            {/* ホーム */}
-            <Button href="/" aria-controls="company-menu" aria-haspopup="true">
+            {/* /////////////////// ホームボタン /////////////////// */}
+            <Button href="/">
               ホーム
             </Button>
-            {/* ///////////////////ホームボタン/////////////////// */}
-            {/* サービスボタン */}
+            {/* /////////////////// ホームボタン (ここまで) /////////////////// */}
+
+            {/* /////////////////// サービスボタン /////////////////// */}
+            <HeaderService />
+            {/* /////////////////// サービスボタン (ここまで) /////////////////// */}
+
+            {/* /////////////////// 会社情報ボタン /////////////////// */}
+            <HeaderCompany />
+            {/* /////////////////// 会社情報ボタン (ここまで) /////////////////// */}
+
+            {/* /////////////////// ニュースボタン /////////////////// */}
+            <HeaderNews />
+            {/* /////////////////// ニュースボタン (ここまで) /////////////////// */}
+
+            {/* /////////////////// 採用情報ボタン /////////////////// */}
             <Button
-              aria-controls="simple-menu"
-              aria-haspopup="true"
-              onClick={handleClick}
-            >
-              サービス
-            </Button>
-            <Menu
-              id="simple-menu"
-              anchorEl={anchorEl}
-              keepMounted
-              open={Boolean(anchorEl)}
-              onClose={handleClose}
-            >
-              <Button onClick={handleClose} href="/posts/first-post">
-                Profile
-              </Button>
-              <Button onClick={handleClose} href="/posts/">
-                My account
-              </Button>
-              <Button onClick={handleClose} href="/posts/first">
-                Logout
-              </Button>
-            </Menu>
-            {/* ///////////////////サービスボタン/////////////////// */}
-            {/* 会社情報ボタン */}
-            <Button
-              aria-controls="company-menu"
-              aria-haspopup="true"
-              onClick={handleClick}
-            >
-              会社情報
-            </Button>
-            <Menu
-              id="company-menu"
-              anchorEl={serviceEl}
-              keepMounted
-              open={Boolean(serviceEl)}
-              onClose={handleClose}
-            >
-              <Button onClick={handleClose} href="/posts/xxx">
-                Profile
-              </Button>
-              <Button onClick={handleClose} href="/posts/yyy">
-                My account
-              </Button>
-              <Button onClick={handleClose} href="/posts/zzz">
-                Logout
-              </Button>
-            </Menu>
-            {/* ///////////////////会社情報ボタン/////////////////// */}
-            {/* ニュースボタン */}
-            {/* <Button
-              aria-controls="company-menu"
-              aria-haspopup="true"
-              onClick={handleClick}
-            >
-              ニュース
-            </Button>
-            <Menu
-              id="company-menu"
-              anchorEl={anchorEl}
-              keepMounted
-              open={Boolean(anchorEl)}
-              onClose={handleClose}
-            >
-              <Button onClick={handleClose}>Profile</Button>
-              <Button onClick={handleClose}>My account</Button>
-              <Button onClick={handleClose}>Logout</Button>
-            </Menu> */}
-            {/* ///////////////////ニュースボタン/////////////////// */}
-            {/* 採用情報 */}
-            <Button
-              href="/posts/xxx"
+              href="/posts/ricrut"
               aria-controls="company-menu"
               aria-haspopup="true"
             >
               採用情報
             </Button>
-            {/* ///////////////////採用情報ボタン/////////////////// */}
-            {/* お問い合わせ */}
+            {/* /////////////////// 採用情報ボタン (ここまで) /////////////////// */}
+
+            {/* /////////////////// 無料相談ボタン /////////////////// */}
             <Button
-              href="/posts/yyy"
+              href="/posts/free"
+              aria-controls="company-menu"
+              aria-haspopup="true"
+            >
+              無料相談
+            </Button>
+            {/* /////////////////// 採用情報ボタン (ここまで) /////////////////// */}
+
+            {/* /////////////////// お問い合わせボタン /////////////////// */}
+            <Button
+              href="#"
               variant="contained"
               color="primary"
               className="header-btn"
             >
               お問い合わせ
             </Button>
-            {/* ///////////////////お問い合わせボタン/////////////////// */}
+            {/* /////////////////// お問い合わせボタン (ここまで) /////////////////// */}
           </ul>
         </div>
       </section>

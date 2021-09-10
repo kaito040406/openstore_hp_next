@@ -1,0 +1,26 @@
+.top {
+  background-color: #fff;
+  &-container {
+    @include container-top();
+    padding: 5% 0;
+  }
+  &-left {
+  }
+  &-heading {
+    @include font78();
+  }
+  &-span {
+    color: #12adfc;
+  }
+  &-text {
+    margin-bottom: 4%;
+    @include font28();
+  }
+  &-btn {
+    width: 18%;
+    padding: 1% 0;
+    @include font30();
+  }
+  &-right {
+  }
+}

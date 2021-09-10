@@ -5,13 +5,6 @@ import HeaderService from './HeaderNav/HeaderService';
 import HeaderCompany from './HeaderNav/HeaderCompany';
 import HeaderNews from './HeaderNav/HeaderNews';
 
-// material uiのcss変更コード その１
-
-// });
-// 使用方法
-// 1:const Button = withStyles({  ~~~~~~ここ~~~~~~  })(Button); にコードを書く。
-// 2:適用したいところにvariant="~~~~"をつける。
-
 export default function Header() {
   return (
     <>
@@ -19,10 +12,10 @@ export default function Header() {
         <div className="header-nav">
           <ul className="header-nav-list">
             <Link href="/">
-              <img className="header-logo" src="./image/openstore-logo.png" />
+              <img className="header-logo" src="../image/openstore-logo.png" />
             </Link>
             {/* /////////////////// ホームボタン /////////////////// */}
-            <Button href="/" aria-controls="company-menu" aria-haspopup="true" fontSize={30}>
+            <Button href="/">
               ホーム
             </Button>
             {/* /////////////////// ホームボタン (ここまで) /////////////////// */}

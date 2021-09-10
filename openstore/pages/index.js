@@ -22,6 +22,7 @@ export default function Main() {
         <Button variant="contained" color="primary" href="/posts/first-post">
           Link
         </Button>
+        <Button>Link</Button>
       </Layout>
     </>
   );

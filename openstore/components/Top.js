@@ -2,19 +2,23 @@ import Button from '@material-ui/core/Button';
 // import { Canvas } from 'react-three-fiber';
 import React, { Suspense } from 'react';
 import { Canvas, useLoader } from 'react-three-fiber';
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 
+// const LoadModel = () => {
+//   const gltf = useLoader(GLTFLoader, '../three/examples/jsm/loaders/three.glb');
+//   return (
+//     <>
+//       <primitive object={gltf.scene} dispose={null} />
+//     </>
+//   );
+// };
 
-const LoadModel = () => {
-	const gltf = useLoader(GLTFLoader, "/three.glb")
-  return <primitive object={gltf.scene} dispose={null} />;
-};
-
-const UseModel = () => {
+const Model = () => {
+  const gltf = useLoader(GLTFLoader, './Three.gltf');
   return (
-    <Suspense fallback={null}>
-      <LoadModel />
-    </Suspense>
+    <>
+      <primitive object={gltf.scene} scale={0.4} />
+    </>
   );
 };
 
@@ -38,9 +42,9 @@ export default function Top() {
           </div>
           <div className="top-right">
             <Canvas>
-              <mesh>
-                <UseModel />
-              </mesh>
+              <Suspense fallback={null}>
+                <Model />
+              </Suspense>
             </Canvas>
           </div>
         </div>

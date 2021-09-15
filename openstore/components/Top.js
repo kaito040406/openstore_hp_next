@@ -41,7 +41,11 @@ export default function Top() {
               ABOUT US
             </Button>
           </div>
-          <div className="top-right"></div>
+          <div className="top-right">
+            <Canvas>
+              <Thing />
+            </Canvas>
+          </div>
         </div>
       </section>
     </>

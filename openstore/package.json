@@ -17,6 +17,7 @@
     "@mui/material": "^5.0.0-rc.0",
     "cannon": "^0.6.2",
     "matrixgl": "^1.0.1",
+    "@react-three/fiber": "^7.0.6",
     "next": "^11.0.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",

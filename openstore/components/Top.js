@@ -1,3 +1,4 @@
+<script src="https://unpkg.com/three@0.111.0/build/three.js"></script>;
 import Button from '@material-ui/core/Button';
 import React from 'react';
 // import * as THREE from 'three';

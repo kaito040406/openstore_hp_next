@@ -3,8 +3,11 @@
   &-container {
     @include container-top();
     padding: 5% 0;
+    display: flex;
+    justify-content: space-between;
   }
   &-left {
+    width: 35%;
   }
   &-heading {
     @include font78();
@@ -17,11 +20,12 @@
     @include font28();
   }
   &-btn {
-    width: 18%;
+    width: 70%;
     padding: 1% 0;
     @include font30();
   }
   &-right {
+    width: 60%;
   }
 }
 

@@ -2,10 +2,10 @@ import * as CANNON from 'cannon';
 import React, { useState, useEffect, useContext, useRef } from 'react';
 import { useRender } from 'react-three-fiber';
 
-// Cannon-world context provider
+// キャノンワールドコンテキストプロバイダー
 const context = React.createContext();
 export function Provider({ children }) {
-  // Set up physics
+  // 物理学を設定する
   const [world] = useState(() => new CANNON.World());
   useEffect(() => {
     world.broadphase = new CANNON.NaiveBroadphase();
@@ -13,31 +13,31 @@ export function Provider({ children }) {
     world.gravity.set(0, 0, -25);
   }, [world]);
 
-  // Run world stepper every frame
+  //フレームごとにワールドステッパーを実行する
   useRender(() => world.step(1 / 60));
-  // Distribute world via context
+  //コンテキストを介してworldを配置する
   return <context.Provider value={world} children={children} />;
 }
 
-// Custom hook to maintain a world physics body
+// 世界の物理ボディを維持するためのカスタムフック
 export function useCannon({ ...props }, fn, deps = []) {
   const ref = useRef();
   // Get cannon world object
   const world = useContext(context);
-  // Instanciate a physics body
+  // キャノンワールドオブジェクトを取得する
   const [body] = useState(() => new CANNON.Body(props));
   useEffect(() => {
-    // Call function so the user can add shapes
+    // ユーザーが図形を追加できるように関数を呼び出す
     fn(body);
-    // Add body to world on mount
+    // マウントでワールドにボディを追加
     world.addBody(body);
-    // Remove body on unmount
+    // アンマウント時にボディを取り外します
     return () => world.removeBody(body);
   }, deps);
 
   useRender(() => {
     if (ref.current) {
-      // Transport cannon physics into the referenced threejs object
+      // cannonの物理を参照されたthreejsオブジェクトに転送します
       ref.current.position.copy(body.position);
       ref.current.quaternion.copy(body.quaternion);
     }

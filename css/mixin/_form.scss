@@ -34,7 +34,8 @@
 }
 
 @mixin container-footer {
-  margin: 5% 10% 0 10%;
+  margin: 0 10% 0 10%;
+  padding: 5% 0 2% 0;
 }
 
 @mixin heading-bottom {

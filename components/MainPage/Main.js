@@ -9,7 +9,7 @@ export default function Main() {
   return (
     <>
       {/* companyのコード */}
-      <div className="company">
+      <section className="company">
         <div className="company-left">
           <h1 className="company-heading">Company</h1>
           <p className="company-heading-sub">会社情報</p>
@@ -27,9 +27,9 @@ export default function Main() {
           className="company-right company-image"
           src="../image/main-image.png"
         />
-      </div>
+      </section>
       {/* serviceのコード */}
-      <div className="service">
+      <section className="service">
         <div className="service-container">
           <h1 className="service-heading">Service</h1>
           <p className="service-heading-sub">サービス</p>
@@ -82,9 +82,9 @@ export default function Main() {
             <img className="service-image" src="../image/main-image.png" />
           </div>
         </div>
-      </div>
+      </section>
       {/* shopifyのコード */}
-      <div className="shopify">
+      <section className="shopify">
         <div className="shopify-left">
           <h1 className="shopify-heading">Shopify Experts</h1>
           <p className="shopify-heading-sub">ショピファイ エキスパート</p>
@@ -106,9 +106,9 @@ export default function Main() {
           className="shopify-right shopify-image"
           src="../image/open-shopify.png"
         />
-      </div>
+      </section>
       {/* newsのコード */}
-      <div className="news">
+      <section className="news">
         <div className="news-container">
           <h1 className="news-heading">News</h1>
           <p className="news-heading-sub">ニュース</p>
@@ -220,9 +220,9 @@ export default function Main() {
             </Card>
           </div>
         </div>
-      </div>
+      </section>
       {/* strategyのコード */}
-      <div className="strategy">
+      <section className="strategy">
         <div className="strategy-left">
           <h1 className="strategy-heading">Strategy</h1>
           <p className="strategy-heading-sub">ストラテジー</p>
@@ -261,7 +261,7 @@ export default function Main() {
           </div>
         </div>
         <img className="strategy-right" src="../image/main-image.png" />
-      </div>
+      </section>
     </>
   );
 }

@@ -91,3 +91,83 @@
     width: 25%;
   }
 }
+
+.shopify {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include container();
+  &-left {
+    width: 55%;
+  }
+  &-heading {
+    line-height: 1.2;
+    @include section-heading();
+    &-sub {
+      @include heading-bottom();
+      @include section-heading-sub();
+    }
+  }
+  &-text {
+    @include font28();
+    letter-spacing: 0.05em;
+    @include text-between();
+  }
+  &-content {
+    @include font22();
+    @include text-between();
+  }
+  &-btn {
+    margin-left: 30%;
+    @include btn();
+  }
+  &-right {
+    border-radius: 40px;
+    width: 40%;
+  }
+}
+
+.news {
+  background-color: #fff;
+  &-container {
+    @include container-padding();
+  }
+  &-heading {
+    line-height: 1.2;
+    @include section-heading();
+    &-sub {
+      @include heading-bottom();
+      @include section-heading-sub();
+    }
+  }
+  &-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-card {
+    width: 32%;
+    height: auto;
+    padding: 1.5%;
+    background-color: #f2f2f2;
+  }
+  &-image {
+    border-radius: 5px;
+  }
+  &-title {
+    margin: 0;
+    @include font46();
+  }
+  &-time {
+    @include font20();
+    @include text-between();
+  }
+  &-text {
+    @include font26();
+  }
+  &-btn {
+    @include btn();
+    @include font28();
+    margin: 0;
+  }
+}

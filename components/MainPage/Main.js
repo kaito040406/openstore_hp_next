@@ -1,4 +1,9 @@
-import Button from '@material-ui/core/Button';
+import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
 
 export default function Main() {
   return (
@@ -47,8 +52,8 @@ export default function Main() {
           <div className="service-item">
             <div className="service-text">
               {/* <div className="service-catch"> */}
-                <span className="service-catch-left">SERVICE</span>
-                <span className="service-catch-right">02</span>
+              <span className="service-catch-left">SERVICE</span>
+              <span className="service-catch-right">02</span>
               {/* </div> */}
               <h1 className="service-name">サービスタイトル</h1>
               <p className="service-lead">
@@ -80,7 +85,165 @@ export default function Main() {
       </div>
       {/* shopifyのコード */}
       <div className="shopify">
-
+        <div className="shopify-left">
+          <h1 className="shopify-heading">Shopify Experts</h1>
+          <p className="shopify-heading-sub">ショピファイ エキスパート</p>
+          <h1 className="shopify-text">
+            オープンストア株式会社は国内では未だ少ないShopify
+            Expertsの公認メンバーです。
+          </h1>
+          <p className="shopify-content">
+            世界ではシェアNo1を誇り、世界175ヶ国で利用されているECサイト作成サービス。
+            開設ショップ数100万以上を誇り（2021年5月現在）、日本国内でも急速にその存在感を増してきています。
+            オープンストア株式会社ではShopifyを活用したECサイトの制作だけではなく、サイト分析、サイト改善、SEO対策、SNS対策、販促提案など
+            ECサイトの運用のノウハウをクライアント様に提供しています。
+          </p>
+          <Button className="shopify-btn" variant="contained" color="primary">
+            お問い合わせ
+          </Button>
+        </div>
+        <img
+          className="shopify-right shopify-image"
+          src="../image/open-shopify.png"
+        />
+      </div>
+      {/* newsのコード */}
+      <div className="news">
+        <div className="news-container">
+          <h1 className="news-heading">News</h1>
+          <p className="news-heading-sub">ニュース</p>
+          <div className="news-item">
+            {/* 投稿一つ目 */}
+            <Card className="news-card">
+              <CardMedia
+                className="news-image"
+                component="img"
+                src="../image/open-news.jpg"
+                alt="open openstore store web"
+              />
+              <CardContent>
+                <Typography className="news-title" gutterBottom component="div">
+                  Lizard
+                </Typography>
+                <Typography className="news-time" gutterBottom component="div">
+                  2001/12/16 14:47
+                </Typography>
+                <Typography
+                  className="news-text"
+                  variant="body2"
+                  color="text.secondary"
+                >
+                  Lizards are a widespread group of squamate reptiles, with over
+                  6,000 species, ranging across all continents except Antarctica
+                </Typography>
+              </CardContent>
+              <CardActions>
+                <Button
+                  className="news-btn"
+                  size="small"
+                  variant="contained"
+                  color="primary"
+                >
+                  記事を読む
+                </Button>
+              </CardActions>
+            </Card>
+            {/* 投稿一つ目 */}
+            <Card className="news-card">
+              <CardMedia
+                className="news-image"
+                component="img"
+                src="../image/open-news.jpg"
+                alt="open openstore store web"
+              />
+              <CardContent>
+                <Typography className="news-title" gutterBottom component="div">
+                  Lizard
+                </Typography>
+                <Typography className="news-time" gutterBottom component="div">
+                  2001/12/16 14:47
+                </Typography>
+                <Typography
+                  className="news-text"
+                  variant="body2"
+                  color="text.secondary"
+                >
+                  Lizards are a widespread group of squamate reptiles, with over
+                  6,000 species, ranging across all continents except Antarctica
+                </Typography>
+              </CardContent>
+              <CardActions>
+                <Button
+                  className="news-btn"
+                  size="small"
+                  variant="contained"
+                  color="primary"
+                >
+                  記事を読む
+                </Button>
+              </CardActions>
+            </Card>
+            {/* 投稿一つ目 */}
+            <Card className="news-card">
+              <CardMedia
+                className="news-image"
+                component="img"
+                src="../image/open-news.jpg"
+                alt="open openstore store web"
+              />
+              <CardContent>
+                <Typography className="news-title" gutterBottom component="div">
+                  Lizard
+                </Typography>
+                <Typography className="news-time" gutterBottom component="div">
+                  2001/12/16 14:47
+                </Typography>
+                <Typography
+                  className="news-text"
+                  variant="body2"
+                  color="text.secondary"
+                >
+                  Lizards are a widespread group of squamate reptiles, with over
+                  6,000 species, ranging across all continents except Antarctica
+                </Typography>
+              </CardContent>
+              <CardActions>
+                <Button
+                  className="news-btn"
+                  size="small"
+                  variant="contained"
+                  color="primary"
+                >
+                  記事を読む
+                </Button>
+              </CardActions>
+            </Card>
+          </div>
+        </div>
+      </div>
+      {/* Strategyのコード */}
+      <div className="Strategy">
+        <div className="Strategy-left">
+          <h1 className="Strategy-heading">Strategy</h1>
+          <p className="Strategy-heading-sub">ストラテジー</p>
+          <h1 className="Strategy-text">
+            オープンストア株式会社は国内では未だ少ないShopify
+            Expertsの公認メンバーです。
+          </h1>
+          <p className="Strategy-content">
+            世界ではシェアNo1を誇り、世界175ヶ国で利用されているECサイト作成サービス。
+            開設ショップ数100万以上を誇り（2021年5月現在）、日本国内でも急速にその存在感を増してきています。
+            オープンストア株式会社ではShopifyを活用したECサイトの制作だけではなく、サイト分析、サイト改善、SEO対策、SNS対策、販促提案など
+            ECサイトの運用のノウハウをクライアント様に提供しています。
+          </p>
+          <Button className="Strategy-btn" variant="contained" color="primary">
+            お問い合わせ
+          </Button>
+        </div>
+        <img
+          className="Strategy-right Strategy-image"
+          src="../image/open-shopify.png"
+        />
       </div>
     </>
   );

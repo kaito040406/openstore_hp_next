@@ -920,7 +920,7 @@ body {
 }
 
 .company-heading-sub {
-  margin-bottom: 6%;
+  margin-bottom: 5%;
   font-size: 3em;
 }
 
@@ -962,7 +962,7 @@ body {
 }
 
 .service-heading-sub {
-  margin-bottom: 6%;
+  margin-bottom: 5%;
   font-size: 3em;
 }
 
@@ -1021,5 +1021,121 @@ body {
 
 .service-image {
   width: 25%;
+}
+
+.shopify {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 5% 10%;
+}
+
+.shopify-left {
+  width: 55%;
+}
+
+.shopify-heading {
+  line-height: 1.2;
+  font-size: 10.5em;
+}
+
+.shopify-heading-sub {
+  margin-bottom: 5%;
+  font-size: 3em;
+}
+
+.shopify-text {
+  font-size: 2.8em;
+  letter-spacing: 0.05em;
+  padding: 0.65em 0 0.5em;
+}
+
+.shopify-content {
+  font-size: 2.2em;
+  padding: 0.65em 0 0.5em;
+}
+
+.shopify-btn {
+  margin-left: 30%;
+  margin-top: 4%;
+  font-family: -apple-system, BlinkMacSystemFont, MyYuGothicM, "Yu Gothic", Meiryo, "Hiragino kaku Gothic ProN", sans-serif;
+  font-size: 3.5em;
+  padding: 1% 4%;
+}
+
+.shopify-right {
+  border-radius: 40px;
+  width: 40%;
+}
+
+.news {
+  background-color: #fff;
+}
+
+.news-container {
+  margin: 0 10%;
+  padding: 5% 0;
+}
+
+.news-heading {
+  line-height: 1.2;
+  font-size: 10.5em;
+}
+
+.news-heading-sub {
+  margin-bottom: 5%;
+  font-size: 3em;
+}
+
+.news-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.news-card {
+  width: 32%;
+  height: auto;
+  padding: 1.5%;
+  background-color: #f2f2f2;
+}
+
+.news-image {
+  border-radius: 5px;
+}
+
+.news-title {
+  margin: 0;
+  font-size: 4.6em;
+}
+
+.news-time {
+  font-size: 2em;
+  padding: 0.65em 0 0.5em;
+}
+
+.news-text {
+  font-size: 2.6em;
+}
+
+.news-btn {
+  margin-top: 4%;
+  font-family: -apple-system, BlinkMacSystemFont, MyYuGothicM, "Yu Gothic", Meiryo, "Hiragino kaku Gothic ProN", sans-serif;
+  font-size: 3.5em;
+  padding: 1% 4%;
+  font-size: 2.8em;
+  margin: 0;
 }
 /*# sourceMappingURL=style.css.map */

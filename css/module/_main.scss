@@ -171,3 +171,50 @@
     margin: 0;
   }
 }
+
+.strategy {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include container();
+  &-left {
+    width: 55%;
+  }
+  &-heading {
+    line-height: 1.2;
+    @include section-heading();
+    &-sub {
+      @include heading-bottom();
+      @include section-heading-sub();
+    }
+  }
+  &-text {
+    @include font36();
+    letter-spacing: 0.05em;
+  }
+  &-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4% 0;
+  }
+  &-thumb {
+    width: 17%;
+    background-color: #fff;
+    border: 1px solid #1212;
+    border-radius: 50%;
+  }
+  &-mask {
+    width: 79%;
+  }
+  &-lead {
+    @include font30();
+  }
+  &-detail {
+    @include font22();
+  }
+  &-right {
+    border-radius: 40px;
+    width: 40%;
+  }
+}

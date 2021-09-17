@@ -3,7 +3,7 @@ import Head from 'next/head';
 import Header from '../components/Header';
 import Top from '../components/Top';
 import Main from '../components/MainPage/Main';
-import Layout from '../components/Footer';
+import Layout from './Layout';
 import Button from '@material-ui/core/Button';
 
 // コピペ用htmlコード(div用)

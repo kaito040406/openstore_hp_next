@@ -1,6 +1,6 @@
 import Head from 'next/head';
 
-export default function Common({ children }) {
+export default function Layout({ children }) {
   return (
     <>
       <Head>
@@ -9,7 +9,6 @@ export default function Common({ children }) {
       </Head>
       {/* children===index.js */}
       <div>{children}</div>
-      <div>footer</div>
     </>
   );
 }

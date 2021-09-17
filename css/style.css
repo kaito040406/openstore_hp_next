@@ -875,6 +875,7 @@ body {
 }
 
 .top-heading {
+  line-height: 1.5;
   font-size: 7.8em;
 }
 
@@ -1137,5 +1138,74 @@ body {
   padding: 1% 4%;
   font-size: 2.8em;
   margin: 0;
+}
+
+.strategy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 5% 10%;
+}
+
+.strategy-left {
+  width: 55%;
+}
+
+.strategy-heading {
+  line-height: 1.2;
+  font-size: 10.5em;
+}
+
+.strategy-heading-sub {
+  margin-bottom: 5%;
+  font-size: 3em;
+}
+
+.strategy-text {
+  font-size: 3.6em;
+  letter-spacing: 0.05em;
+}
+
+.strategy-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 4% 0;
+}
+
+.strategy-thumb {
+  width: 17%;
+  background-color: #fff;
+  border: 1px solid #1212;
+  border-radius: 50%;
+}
+
+.strategy-mask {
+  width: 79%;
+}
+
+.strategy-lead {
+  font-size: 3em;
+}
+
+.strategy-detail {
+  font-size: 2.2em;
+}
+
+.strategy-right {
+  border-radius: 40px;
+  width: 40%;
 }
 /*# sourceMappingURL=style.css.map */

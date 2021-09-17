@@ -10,6 +10,7 @@
     width: 35%;
   }
   &-heading {
+    line-height: 1.5;
     @include font78();
   }
   &-span {
@@ -28,4 +29,3 @@
     width: 60%;
   }
 }
-

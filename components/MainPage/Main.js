@@ -221,29 +221,46 @@ export default function Main() {
           </div>
         </div>
       </div>
-      {/* Strategyのコード */}
-      <div className="Strategy">
-        <div className="Strategy-left">
-          <h1 className="Strategy-heading">Strategy</h1>
-          <p className="Strategy-heading-sub">ストラテジー</p>
-          <h1 className="Strategy-text">
-            オープンストア株式会社は国内では未だ少ないShopify
-            Expertsの公認メンバーです。
+      {/* strategyのコード */}
+      <div className="strategy">
+        <div className="strategy-left">
+          <h1 className="strategy-heading">Strategy</h1>
+          <p className="strategy-heading-sub">ストラテジー</p>
+          <h1 className="strategy-text">
+            様々なビジネス課題をWEBサイトで解決してきた私たちがWEBサイトの活用方法をご提案します。
           </h1>
-          <p className="Strategy-content">
-            世界ではシェアNo1を誇り、世界175ヶ国で利用されているECサイト作成サービス。
-            開設ショップ数100万以上を誇り（2021年5月現在）、日本国内でも急速にその存在感を増してきています。
-            オープンストア株式会社ではShopifyを活用したECサイトの制作だけではなく、サイト分析、サイト改善、SEO対策、SNS対策、販促提案など
-            ECサイトの運用のノウハウをクライアント様に提供しています。
-          </p>
-          <Button className="Strategy-btn" variant="contained" color="primary">
-            お問い合わせ
-          </Button>
+          <div className="strategy-item">
+            <img className="strategy-thumb" src="../image/strategy1.png" />
+            <div className="strategy-mask">
+              <h1 className="strategy-lead">
+                課題解決に向けた、きめ細かなご提案
+              </h1>
+              <p className="strategy-detail">
+                Webサイトの持つべき目標や役割は様々です。私たちはクライアントとの綿密な打ち合わせにより、達成すべきゴールを明確にし、最適な導線を設計し、こだわった構築を実現します。
+              </p>
+            </div>
+          </div>
+          <div className="strategy-item">
+            <img className="strategy-thumb" src="../image/strategy2.png" />
+            <div className="strategy-mask">
+              <h1 className="strategy-lead">WEBサービス開発、構築</h1>
+              <p className="strategy-detail">
+                企画・デザイン・開発をワンストップで圧倒的な高品質でご提供。
+                クラウドサービスの提供・ITインフラの構築・運用までご相談ください。
+              </p>
+            </div>
+          </div>
+          <div className="strategy-item">
+            <img className="strategy-thumb" src="../image/strategy3.png" />
+            <div className="strategy-mask">
+              <h1 className="strategy-lead">Webマーケティング</h1>
+              <p className="strategy-detail">
+                「どうしたらサイトへのアクセスを増やせるのか」「どうしたらもっと自社サイトからの採用や売上を増やせるのか」など、解析・運用方法を相談しながら、お客様が抱える課題に応じて解決策を考え、お客様と共に歩んでいくことが私たちの使命です。
+              </p>
+            </div>
+          </div>
         </div>
-        <img
-          className="Strategy-right Strategy-image"
-          src="../image/open-shopify.png"
-        />
+        <img className="strategy-right" src="../image/main-image.png" />
       </div>
     </>
   );

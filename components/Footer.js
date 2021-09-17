@@ -1,5 +1,4 @@
 import Head from 'next/head';
-<script></script>;
 
 export default function Common({ children }) {
   return (

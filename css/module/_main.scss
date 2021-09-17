@@ -1,0 +1,93 @@
+.company {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include container-left();
+  &-left {
+    width: 55%;
+  }
+  &-heading {
+    line-height: 1.2;
+    @include section-heading();
+    &-sub {
+      @include heading-bottom();
+      @include section-heading-sub();
+    }
+  }
+  &-text {
+    @include font28();
+    letter-spacing: 0.05em;
+    @include text-between();
+  }
+  &-content {
+    @include font22();
+    @include text-between();
+  }
+  &-btn {
+    margin-left: 30%;
+    @include btn();
+  }
+  &-right {
+    width: 40%;
+  }
+}
+
+.service {
+  background-color: #fff;
+  &-container {
+    @include container-padding();
+  }
+  &-heading {
+    line-height: 1.2;
+    @include section-heading();
+    &-sub {
+      @include heading-bottom();
+      @include section-heading-sub();
+    }
+  }
+  &-item {
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 3% 5%;
+    margin-bottom: 5%;
+    border-radius: 40px;
+  }
+  &-text {
+    width: 60%;
+  }
+  &-catch {
+    &-left {
+      color: #12adfc;
+      border-bottom: 2px solid #12adfc;
+      padding-bottom: 0.3em;
+      margin-right: 0.3em;
+      position: relative;
+      bottom: 1rem;
+      letter-spacing: 0.03em;
+      @include font30();
+    }
+    &-right {
+      font-size: 10em;
+      color: #12adfc;
+      line-height: 1;
+    }
+  }
+  &-name {
+    line-height: 1;
+    @include font46();
+    @include text-between();
+  }
+  &-lead {
+    @include font30();
+    @include text-between();
+  }
+  &-detail {
+    @include font22();
+    @include text-between();
+  }
+  &-image {
+    width: 25%;
+  }
+}

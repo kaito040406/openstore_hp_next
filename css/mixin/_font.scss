@@ -1,12 +1,26 @@
 // fontのmixin ////////////////////////////////////////////////////////////////
 // (bodyにfont-size:62.5%;をつけたら,1em=10px)//////////////////////////////////
 
+@mixin section-heading {
+  font-size: 10.5em;
+}
+
+@mixin section-heading-sub {
+  font-size: 3em;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+
 @mixin font78 {
   font-size: 7.8em;
 }
 
 @mixin font56 {
   font-size: 5.6em;
+}
+
+@mixin font46 {
+  font-size: 4.6em;
 }
 
 @mixin font42 {

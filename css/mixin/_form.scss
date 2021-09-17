@@ -6,3 +6,50 @@
 
 /////////////////////////////////////////////////////////////////////////////////
 
+// containerのcss
+
+@mixin container {
+  margin: 5% 10%;
+}
+
+@mixin container-padding {
+  margin: 0 10%;
+  padding: 5% 0;
+}
+
+@mixin container-top {
+  margin: 0 0 5% 10%;
+}
+
+@mixin container-left {
+  margin: 5% 0 5% 10%;
+}
+
+@mixin container-right {
+  margin: 5% 10% 5% 0;
+}
+
+@mixin container-header {
+  margin: 0 10% 0 10%;
+}
+
+@mixin container-footer {
+  margin: 5% 10% 0 10%;
+}
+
+@mixin heading-bottom {
+  margin-bottom: 6%;
+}
+
+// heading,title以外
+@mixin text-between {
+  padding: 0.65em 0 0.5em;
+}
+
+@mixin btn {
+  margin-top: 4%;
+  font-family: -apple-system, BlinkMacSystemFont, MyYuGothicM, "Yu Gothic", Meiryo, "Hiragino kaku Gothic ProN",
+    sans-serif;
+  font-size: 3.5em;
+  padding: 1% 4%;
+}

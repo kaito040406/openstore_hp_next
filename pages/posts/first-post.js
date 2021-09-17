@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import Header from '../../components/Header';
-import Layout from '../../components/Common-footer';
+import Layout from '../Layout';
 
 export default function FirstPost() {
   return (

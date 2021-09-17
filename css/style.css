@@ -484,11 +484,12 @@ template {
 /* ============================================ */
 html,
 body {
-  font-family: -apple-system, BlinkMacSystemFont, MyYuGothicM, "Yu Gothic", Meiryo, "Hiragino kaku Gothic ProN",
- sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, MyYuGothicM, "Yu Gothic", Meiryo, "Hiragino kaku Gothic ProN", sans-serif;
   line-height: 1.6;
   background-color: #f2f2f2;
   font-size: 62.5%;
+  font-weight: 400;
+  line-height: 2;
 }
 
 * {
@@ -845,8 +846,7 @@ body {
   padding: 6px 16px;
   font-size: 1.6em;
   color: #000;
-  font-family: -apple-system, BlinkMacSystemFont, MyYuGothicM, "Yu Gothic", Meiryo, "Hiragino kaku Gothic ProN",
- sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, MyYuGothicM, "Yu Gothic", Meiryo, "Hiragino kaku Gothic ProN", sans-serif;
 }
 
 .MuiButton-containedPrimary {
@@ -875,6 +875,7 @@ body {
 }
 
 .top-heading {
+  line-height: 1.5;
   font-size: 7.8em;
 }
 
@@ -888,12 +889,398 @@ body {
 }
 
 .top-btn {
-  width: 70%;
-  padding: 1% 0;
+  width: 60%;
+  padding: 2% 0;
   font-size: 3em;
 }
 
 .top-right {
   width: 60%;
+}
+
+.company {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 5% 0 5% 10%;
+}
+
+.company-left {
+  width: 55%;
+}
+
+.company-heading {
+  line-height: 1.2;
+  font-size: 10.5em;
+}
+
+.company-heading-sub {
+  margin-bottom: 5%;
+  font-size: 3em;
+}
+
+.company-text {
+  font-size: 2.8em;
+  letter-spacing: 0.05em;
+  padding: 0.65em 0 0.5em;
+}
+
+.company-content {
+  font-size: 2.2em;
+  padding: 0.65em 0 0.5em;
+}
+
+.company-btn {
+  margin-left: 30%;
+  margin-top: 4%;
+  font-family: -apple-system, BlinkMacSystemFont, MyYuGothicM, "Yu Gothic", Meiryo, "Hiragino kaku Gothic ProN", sans-serif;
+  font-size: 3.5em;
+  padding: 1% 4%;
+}
+
+.company-right {
+  width: 40%;
+}
+
+.service {
+  background-color: #fff;
+}
+
+.service-container {
+  margin: 0 10%;
+  padding: 5% 0;
+}
+
+.service-heading {
+  line-height: 1.2;
+  font-size: 10.5em;
+}
+
+.service-heading-sub {
+  margin-bottom: 5%;
+  font-size: 3em;
+}
+
+.service-item {
+  background-color: #f2f2f2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3% 5%;
+  margin-bottom: 5%;
+  border-radius: 40px;
+}
+
+.service-text {
+  width: 60%;
+}
+
+.service-catch-left {
+  color: #12adfc;
+  border-bottom: 2px solid #12adfc;
+  padding-bottom: 0.3em;
+  margin-right: 0.3em;
+  position: relative;
+  bottom: 1rem;
+  letter-spacing: 0.03em;
+  font-size: 3em;
+}
+
+.service-catch-right {
+  font-size: 10em;
+  color: #12adfc;
+  line-height: 1;
+}
+
+.service-name {
+  line-height: 1;
+  font-size: 4.6em;
+  padding: 0.65em 0 0.5em;
+}
+
+.service-lead {
+  font-size: 3em;
+  padding: 0.65em 0 0.5em;
+}
+
+.service-detail {
+  font-size: 2.2em;
+  padding: 0.65em 0 0.5em;
+}
+
+.service-image {
+  width: 25%;
+}
+
+.shopify {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 5% 10%;
+}
+
+.shopify-left {
+  width: 55%;
+}
+
+.shopify-heading {
+  line-height: 1.2;
+  font-size: 10.5em;
+}
+
+.shopify-heading-sub {
+  margin-bottom: 5%;
+  font-size: 3em;
+}
+
+.shopify-text {
+  font-size: 2.8em;
+  letter-spacing: 0.05em;
+  padding: 0.65em 0 0.5em;
+}
+
+.shopify-content {
+  font-size: 2.2em;
+  padding: 0.65em 0 0.5em;
+}
+
+.shopify-btn {
+  margin-left: 30%;
+  margin-top: 4%;
+  font-family: -apple-system, BlinkMacSystemFont, MyYuGothicM, "Yu Gothic", Meiryo, "Hiragino kaku Gothic ProN", sans-serif;
+  font-size: 3.5em;
+  padding: 1% 4%;
+}
+
+.shopify-right {
+  border-radius: 40px;
+  width: 40%;
+}
+
+.news {
+  background-color: #fff;
+}
+
+.news-container {
+  margin: 0 10%;
+  padding: 5% 0;
+}
+
+.news-heading {
+  line-height: 1.2;
+  font-size: 10.5em;
+}
+
+.news-heading-sub {
+  margin-bottom: 5%;
+  font-size: 3em;
+}
+
+.news-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.news-card {
+  width: 32%;
+  height: auto;
+  padding: 1.5%;
+  background-color: #f2f2f2;
+}
+
+.news-image {
+  border-radius: 5px;
+}
+
+.news-title {
+  margin: 0;
+  font-size: 4.6em;
+}
+
+.news-time {
+  font-size: 2em;
+  padding: 0.65em 0 0.5em;
+}
+
+.news-text {
+  font-size: 2.6em;
+}
+
+.news-btn {
+  margin-top: 4%;
+  font-family: -apple-system, BlinkMacSystemFont, MyYuGothicM, "Yu Gothic", Meiryo, "Hiragino kaku Gothic ProN", sans-serif;
+  font-size: 3.5em;
+  padding: 1% 4%;
+  font-size: 2.8em;
+  margin: 0;
+}
+
+.strategy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 5% 10%;
+}
+
+.strategy-left {
+  width: 55%;
+}
+
+.strategy-heading {
+  line-height: 1.2;
+  font-size: 10.5em;
+}
+
+.strategy-heading-sub {
+  margin-bottom: 5%;
+  font-size: 3em;
+}
+
+.strategy-text {
+  font-size: 3.6em;
+  letter-spacing: 0.05em;
+}
+
+.strategy-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 4% 0;
+}
+
+.strategy-thumb {
+  width: 17%;
+  background-color: #fff;
+  border: 1px solid #1212;
+  border-radius: 50%;
+}
+
+.strategy-mask {
+  width: 79%;
+}
+
+.strategy-lead {
+  font-size: 3em;
+}
+
+.strategy-detail {
+  font-size: 2.2em;
+}
+
+.strategy-right {
+  border-radius: 40px;
+  width: 40%;
+}
+
+.footer {
+  background-color: #526993;
+  color: #fff;
+}
+
+.footer-container {
+  margin: 0 10% 0 10%;
+  padding: 5% 0 2% 0;
+}
+
+.footer-mask {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 2%;
+  border-bottom: 1px dashed #fff;
+}
+
+.footer-image {
+  width: 15%;
+}
+
+.footer-item {
+  width: 16%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.footer-lead {
+  font-size: 3.4em;
+}
+
+.footer-detail {
+  font-size: 1em;
+  display: block;
+  color: #fff;
+  padding-left: 5%;
+}
+
+.footer-terms {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.footer-policy {
+  color: #fff;
+  font-size: 2.2em;
+  margin: 1% 0;
+}
+
+.footer-inc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-right: 16px;
 }
 /*# sourceMappingURL=style.css.map */

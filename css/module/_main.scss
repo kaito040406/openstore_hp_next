@@ -17,8 +17,7 @@
     }
   }
   &-text {
-    @include font28();
-    letter-spacing: 0.05em;
+    @include text();
     @include text-between();
   }
   &-content {
@@ -36,9 +35,7 @@
 
 .service {
   background-color: #fff;
-  &-container {
-    @include container-padding();
-  }
+  @include container-padding();
   &-heading {
     @include section-heading();
     &::before {
@@ -60,9 +57,6 @@
   &-image {
     width: 25%;
     margin: 0 auto 15% auto;
-    // border: 1px solid #000;
-    // border-radius: 50%;
-    // padding: 14%;
   }
   &-lead {
     line-height: 1;
@@ -75,6 +69,13 @@
   &-detail {
     @include font24();
     @include text-between();
+  }
+  &-btn {
+    @include btn-border-none();
+    padding: 0;
+    font-size: 1.4em;
+    width: 12.1%;
+    margin: 4% auto 0 auto;
   }
 }
 
@@ -102,9 +103,7 @@
     }
   }
   &-text {
-    @include font32();
-    font-weight: 600;
-    letter-spacing: 0.05em;
+    @include text();
     @include text-between();
   }
   &-content {
@@ -112,11 +111,7 @@
     @include text-between();
   }
   &-btn {
-    @include btn();
-    color: #12adfc;
-    font-size: 2.5em;
-    border-bottom: 1px solid;
-    border-radius: initial;
+    @include btn-border-none();
   }
   &-right {
     width: 60%;
@@ -128,9 +123,7 @@
 
 .news {
   background-color: #fff;
-  &-container {
-    @include container-padding();
-  }
+  @include container-padding();
   &-heading {
     @include section-heading();
     &::before {
@@ -143,33 +136,26 @@
   }
   &-item {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
   }
   &-card {
-    width: 32%;
+    width: 30%;
     height: auto;
-    padding: 1.5%;
-    background-color: #f2f2f2;
+    padding: 2%;
   }
   &-image {
-    border-radius: 5px;
+  }
+  &-time {
+    @include font14();
+    @include text-between();
   }
   &-title {
     margin: 0;
-    @include font46();
+    @include font22();
   }
-  &-time {
-    @include font20();
-    @include text-between();
-  }
-  &-text {
-    @include font26();
-  }
-  &-btn {
-    @include btn();
-    @include font28();
-    margin: 0;
+  .css-bhp9pd-MuiPaper-root-MuiCard-root {
+    box-shadow: none;
   }
 }
 
@@ -192,8 +178,7 @@
     }
   }
   &-text {
-    @include font36();
-    letter-spacing: 0.05em;
+    @include text();
   }
   &-item {
     display: flex;

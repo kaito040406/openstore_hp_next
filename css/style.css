@@ -918,9 +918,9 @@ body {
 .company-heading {
   line-height: 1.2;
   position: relative;
-  font-size: 8.5em;
+  font-size: 7em;
   font-weight: 600;
-  margin-bottom: 5%;
+  margin-bottom: 7.5%;
 }
 
 .company-heading::before {
@@ -940,7 +940,8 @@ body {
 }
 
 .company-text {
-  font-size: 2.8em;
+  font-size: 3.2em;
+  font-weight: 600;
   letter-spacing: 0.05em;
   margin: 0.65em 0 0.5em;
 }
@@ -964,9 +965,6 @@ body {
 
 .service {
   background-color: #fff;
-}
-
-.service-container {
   margin: 0 10%;
   padding: 5% 0;
 }
@@ -974,9 +972,9 @@ body {
 .service-heading {
   line-height: 1.2;
   position: relative;
-  font-size: 8.5em;
+  font-size: 7em;
   font-weight: 600;
-  margin-bottom: 5%;
+  margin-bottom: 7.5%;
 }
 
 .service-heading::before {
@@ -1030,6 +1028,21 @@ body {
   margin: 0.65em 0 0.5em;
 }
 
+.service-btn {
+  margin-top: 4%;
+  font-family: -apple-system, BlinkMacSystemFont, MyYuGothicM, "Yu Gothic", Meiryo, "Hiragino kaku Gothic ProN", sans-serif;
+  font-size: 3.5em;
+  padding: 1% 4%;
+  color: #12adfc;
+  font-size: 2.5em;
+  border-bottom: 1px solid;
+  border-radius: initial;
+  padding: 0;
+  font-size: 1.4em;
+  width: 12.1%;
+  margin: 4% auto 0 auto;
+}
+
 .shopify {
   margin: 5% 0 5% 10%;
 }
@@ -1056,9 +1069,9 @@ body {
 .shopify-heading {
   line-height: 1.2;
   position: relative;
-  font-size: 8.5em;
+  font-size: 7em;
   font-weight: 600;
-  margin-bottom: 5%;
+  margin-bottom: 7.5%;
 }
 
 .shopify-heading::before {
@@ -1109,9 +1122,6 @@ body {
 
 .news {
   background-color: #fff;
-}
-
-.news-container {
   margin: 0 10%;
   padding: 5% 0;
 }
@@ -1119,9 +1129,9 @@ body {
 .news-heading {
   line-height: 1.2;
   position: relative;
-  font-size: 8.5em;
+  font-size: 7em;
   font-weight: 600;
-  margin-bottom: 5%;
+  margin-bottom: 7.5%;
 }
 
 .news-heading::before {
@@ -1144,46 +1154,33 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
 .news-card {
-  width: 32%;
+  width: 30%;
   height: auto;
-  padding: 1.5%;
-  background-color: #f2f2f2;
+  padding: 2%;
 }
 
-.news-image {
-  border-radius: 5px;
+.news-time {
+  font-size: 1.4em;
+  margin: 0.65em 0 0.5em;
 }
 
 .news-title {
   margin: 0;
-  font-size: 4.6em;
+  font-size: 2.2em;
 }
 
-.news-time {
-  font-size: 2em;
-  margin: 0.65em 0 0.5em;
-}
-
-.news-text {
-  font-size: 2.6em;
-}
-
-.news-btn {
-  margin-top: 4%;
-  font-family: -apple-system, BlinkMacSystemFont, MyYuGothicM, "Yu Gothic", Meiryo, "Hiragino kaku Gothic ProN", sans-serif;
-  font-size: 3.5em;
-  padding: 1% 4%;
-  font-size: 2.8em;
-  margin: 0;
+.news .css-bhp9pd-MuiPaper-root-MuiCard-root {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .strategy {
@@ -1206,9 +1203,9 @@ body {
 .strategy-heading {
   line-height: 1.2;
   position: relative;
-  font-size: 8.5em;
+  font-size: 7em;
   font-weight: 600;
-  margin-bottom: 5%;
+  margin-bottom: 7.5%;
 }
 
 .strategy-heading::before {
@@ -1228,7 +1225,8 @@ body {
 }
 
 .strategy-text {
-  font-size: 3.6em;
+  font-size: 3.2em;
+  font-weight: 600;
   letter-spacing: 0.05em;
 }
 

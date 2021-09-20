@@ -30,31 +30,32 @@ export default function Main() {
       </section>
       {/* serviceのコード */}
       <section className="service">
-        <div className="service-container">
-          <h1 className="service-heading">SERVICE</h1>
-          <div className="service-mask">
-            <div className="service-card">
-              <img className="service-image" src="../image/shopify.png" />
-              <h1 className="service-lead">Shopify構築</h1>
-              <p className="service-detail">
-                多くのWeb・デジタルマーケティング施策を実施してきたノウハウをもとにした、デジタルマーケティングの現場で本当に役立つ知識をスライド形式で提供。いろんな本やWebサイトをまたがなくてもで調べ物が完結します。
-              </p>
-            </div>
-            <div className="service-card">
-              <img className="service-image" src="../image/line.png" />
-              <h1 className="service-lead">L-Store</h1>
-              <p className="service-detail">
-                多くのWeb・デジタルマーケティング施策を実施してきたノウハウをもとにした、デジタルマーケティングの現場で本当に役立つ知識をスライド形式で提供。いろんな本やWebサイトをまたがなくてもで調べ物が完結します。
-              </p>
-            </div>
-            <div className="service-card">
-              <img className="service-image" src="../image/internet.png" />
-              <h1 className="service-lead">WEBサービス構築/開発</h1>
-              <p className="service-detail">
-                多くのWeb・デジタルマーケティング施策を実施してきたノウハウをもとにした、デジタルマーケティングの現場で本当に役立つ知識をスライド形式で提供。いろんな本やWebサイトをまたがなくてもで調べ物が完結します。
-              </p>
-            </div>
+        <h1 className="service-heading">SERVICE</h1>
+        <div className="service-mask">
+          <div className="service-card">
+            <img className="service-image" src="../image/shopify.png" />
+            <h1 className="service-lead">Shopify構築</h1>
+            <p className="service-detail">
+              多くのWeb・デジタルマーケティング施策を実施してきたノウハウをもとにした、デジタルマーケティングの現場で本当に役立つ知識をスライド形式で提供。いろんな本やWebサイトをまたがなくてもで調べ物が完結します。
+            </p>
           </div>
+          <div className="service-card">
+            <img className="service-image" src="../image/line.png" />
+            <h1 className="service-lead">L-Store</h1>
+            <p className="service-detail">
+              多くのWeb・デジタルマーケティング施策を実施してきたノウハウをもとにした、デジタルマーケティングの現場で本当に役立つ知識をスライド形式で提供。いろんな本やWebサイトをまたがなくてもで調べ物が完結します。
+            </p>
+          </div>
+          <div className="service-card">
+            <img className="service-image" src="../image/internet.png" />
+            <h1 className="service-lead">WEBサービス構築/開発</h1>
+            <p className="service-detail">
+              多くのWeb・デジタルマーケティング施策を実施してきたノウハウをもとにした、デジタルマーケティングの現場で本当に役立つ知識をスライド形式で提供。いろんな本やWebサイトをまたがなくてもで調べ物が完結します。
+            </p>
+          </div>
+        </div>
+        <div className="service-btn">
+          <Button>view more→</Button>
         </div>
       </section>
       {/* shopifyのコード */}
@@ -83,12 +84,12 @@ export default function Main() {
       </section>
       {/* newsのコード */}
       <section className="news">
-        <div className="news-container">
-          <h1 className="news-heading">NEWS</h1>
-          {/* <p className="news-heading-sub">ニュース</p> */}
-          <div className="news-item">
-            {/* 投稿一つ目 */}
-            <Card className="news-card">
+        <h1 className="news-heading">NEWS</h1>
+        {/* <p className="news-heading-sub">ニュース</p> */}
+        <div className="news-item">
+          {/* 投稿一つ目 */}
+          <Button className="news-card">
+            <Card>
               <CardMedia
                 className="news-image"
                 component="img"
@@ -96,34 +97,18 @@ export default function Main() {
                 alt="open openstore store web"
               />
               <CardContent>
-                <Typography className="news-title" gutterBottom component="div">
-                  Lizard
-                </Typography>
                 <Typography className="news-time" gutterBottom component="div">
                   2001/12/16 14:47
                 </Typography>
-                {/* <Typography
-                  className="news-text"
-                  variant="body2"
-                  color="text.secondary"
-                >
-                  Lizards are a widespread group of squamate reptiles, with over
-                  6,000 species, ranging across all continents except Antarctica
-                </Typography> */}
+                <Typography className="news-title" gutterBottom component="div">
+                  Lizard
+                </Typography>
               </CardContent>
-              <CardActions>
-                <Button
-                  className="news-btn"
-                  size="small"
-                  variant="contained"
-                  color="primary"
-                >
-                  記事を読む
-                </Button>
-              </CardActions>
             </Card>
-            {/* 投稿一つ目 */}
-            <Card className="news-card">
+          </Button>
+          {/* 投稿2つ目 */}
+          <Button className="news-card">
+            <Card>
               <CardMedia
                 className="news-image"
                 component="img"
@@ -131,34 +116,18 @@ export default function Main() {
                 alt="open openstore store web"
               />
               <CardContent>
-                <Typography className="news-title" gutterBottom component="div">
-                  Lizard
-                </Typography>
                 <Typography className="news-time" gutterBottom component="div">
                   2001/12/16 14:47
                 </Typography>
-                {/* <Typography
-                  className="news-text"
-                  variant="body2"
-                  color="text.secondary"
-                >
-                  Lizards are a widespread group of squamate reptiles, with over
-                  6,000 species, ranging across all continents except Antarctica
-                </Typography> */}
+                <Typography className="news-title" gutterBottom component="div">
+                  Lizard
+                </Typography>
               </CardContent>
-              <CardActions>
-                <Button
-                  className="news-btn"
-                  size="small"
-                  variant="contained"
-                  color="primary"
-                >
-                  記事を読む
-                </Button>
-              </CardActions>
             </Card>
-            {/* 投稿一つ目 */}
-            <Card className="news-card">
+          </Button>
+          {/* 投稿3つ目 */}
+          <Button className="news-card">
+            <Card>
               <CardMedia
                 className="news-image"
                 component="img"
@@ -166,33 +135,15 @@ export default function Main() {
                 alt="open openstore store web"
               />
               <CardContent>
-                <Typography className="news-title" gutterBottom component="div">
-                  Lizard
-                </Typography>
                 <Typography className="news-time" gutterBottom component="div">
                   2001/12/16 14:47
                 </Typography>
-                {/* <Typography
-                  className="news-text"
-                  variant="body2"
-                  color="text.secondary"
-                >
-                  Lizards are a widespread group of squamate reptiles, with over
-                  6,000 species, ranging across all continents except Antarctica
-                </Typography> */}
+                <Typography className="news-title" gutterBottom component="div">
+                  Lizard
+                </Typography>
               </CardContent>
-              <CardActions>
-                <Button
-                  className="news-btn"
-                  size="small"
-                  variant="contained"
-                  color="primary"
-                >
-                  記事を読む
-                </Button>
-              </CardActions>
             </Card>
-          </div>
+          </Button>
         </div>
       </section>
       {/* strategyのコード */}

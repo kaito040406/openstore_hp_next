@@ -7,8 +7,10 @@
     width: 55%;
   }
   &-heading {
-    line-height: 1.2;
     @include section-heading();
+    &::before {
+      @include heading-before-line();
+    }
     &-sub {
       @include heading-bottom();
       @include section-heading-sub();
@@ -38,78 +40,70 @@
     @include container-padding();
   }
   &-heading {
-    line-height: 1.2;
     @include section-heading();
+    &::before {
+      @include heading-before-line();
+    }
     &-sub {
       @include heading-bottom();
       @include section-heading-sub();
     }
   }
-  &-item {
-    background-color: #f2f2f2;
+  &-mask {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    padding: 3% 5%;
-    margin-bottom: 5%;
-    border-radius: 40px;
   }
-  &-text {
-    width: 60%;
+  &-card {
+    width: 29%;
   }
-  &-catch {
-    &-left {
-      color: #12adfc;
-      border-bottom: 2px solid #12adfc;
-      padding-bottom: 0.3em;
-      margin-right: 0.3em;
-      position: relative;
-      bottom: 1rem;
-      letter-spacing: 0.03em;
-      @include font30();
-    }
-    &-right {
-      font-size: 10em;
-      color: #12adfc;
-      line-height: 1;
-    }
-  }
-  &-name {
-    line-height: 1;
-    @include font46();
-    @include text-between();
+  &-image {
+    width: 25%;
+    margin: 0 auto 15% auto;
+    // border: 1px solid #000;
+    // border-radius: 50%;
+    // padding: 14%;
   }
   &-lead {
+    line-height: 1;
+    border-left: 2px solid #12adfc;
+    padding-left: 2.7%;
+    font-weight: 500;
     @include font30();
     @include text-between();
   }
   &-detail {
-    @include font22();
+    @include font24();
     @include text-between();
-  }
-  &-image {
-    width: 25%;
   }
 }
 
 .shopify {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  @include container();
+  @include container-left();
+  &-mask {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
   &-left {
-    width: 55%;
+    width: 40%;
+    padding: 3% 3% 3% 0;
+    position: relative;
+    background-color: #fff;
   }
   &-heading {
-    line-height: 1.2;
     @include section-heading();
+    &::before {
+      @include heading-before-line();
+    }
     &-sub {
       @include heading-bottom();
       @include section-heading-sub();
     }
   }
   &-text {
-    @include font28();
+    @include font32();
+    font-weight: 600;
     letter-spacing: 0.05em;
     @include text-between();
   }
@@ -118,12 +112,17 @@
     @include text-between();
   }
   &-btn {
-    margin-left: 30%;
     @include btn();
+    color: #12adfc;
+    font-size: 2.5em;
+    border-bottom: 1px solid;
+    border-radius: initial;
   }
   &-right {
-    border-radius: 40px;
-    width: 40%;
+    width: 60%;
+    position: absolute;
+    z-index: -1;
+    right: 0;
   }
 }
 
@@ -133,8 +132,10 @@
     @include container-padding();
   }
   &-heading {
-    line-height: 1.2;
     @include section-heading();
+    &::before {
+      @include heading-before-line();
+    }
     &-sub {
       @include heading-bottom();
       @include section-heading-sub();
@@ -181,8 +182,10 @@
     width: 55%;
   }
   &-heading {
-    line-height: 1.2;
     @include section-heading();
+    &::before {
+      @include heading-before-line();
+    }
     &-sub {
       @include heading-bottom();
       @include section-heading-sub();

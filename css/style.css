@@ -1272,6 +1272,51 @@ body {
   color: #fff;
 }
 
+.footer-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-contact-left {
+  background: url("https://as2.ftcdn.net/v2/jpg/02/36/62/99/1000_F_236629968_cvZT3xpLsf26tuvcJOLaU8xIR1GfPrus.jpg");
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-size: cover;
+  width: 50%;
+  padding: 10% 0;
+  text-align: center;
+  color: #fff;
+}
+
+.footer-contact-lead {
+  font-size: 2em;
+}
+
+.footer-contact-title {
+  font-size: 3em;
+  font-weight: 600;
+}
+
+.footer-contact-right {
+  background: url("https://as1.ftcdn.net/v2/jpg/02/36/73/30/1000_F_236733013_bfndtBM4IRmmUIbFSOns1N7OfV4uxLOO.jpg");
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-size: cover;
+  width: 50%;
+  padding: 10% 0;
+  text-align: center;
+  color: #fff;
+}
+
 .footer-container {
   margin: 0 10% 0 10%;
   padding: 5% 0 2% 0;

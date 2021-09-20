@@ -1,6 +1,28 @@
+
+
 .footer {
   background-color: #526993;
   color: #fff;
+  &-contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-left {
+      background: url("https://as2.ftcdn.net/v2/jpg/02/36/62/99/1000_F_236629968_cvZT3xpLsf26tuvcJOLaU8xIR1GfPrus.jpg");
+      @include footer-contact-flex();
+    }
+    &-lead {
+      @include font20();
+    }
+    &-title {
+      @include font30();
+      font-weight: 600;
+    }
+    &-right {
+      background: url("https://as1.ftcdn.net/v2/jpg/02/36/73/30/1000_F_236733013_bfndtBM4IRmmUIbFSOns1N7OfV4uxLOO.jpg");
+      @include footer-contact-flex();
+    }
+  }
   &-container {
     @include container-footer();
   }

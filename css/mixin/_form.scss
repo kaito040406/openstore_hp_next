@@ -44,13 +44,48 @@
 
 // heading,title以外
 @mixin text-between {
-  padding: 0.65em 0 0.5em;
+  margin: 0.65em 0 0.5em;
 }
 
-@mixin btn {
-  margin-top: 4%;
-  font-family: -apple-system, BlinkMacSystemFont, MyYuGothicM, "Yu Gothic", Meiryo, "Hiragino kaku Gothic ProN",
-    sans-serif;
-  font-size: 3.5em;
-  padding: 1% 4%;
+// textのコンテンツのコード
+@mixin text {
+  font-size: 3.2em;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+// 模擬要素 headingの上に線をつけるコード
+
+@mixin heading-before-line {
+  content: "";
+  width: 45px;
+  height: 1%;
+  border-top: 2px solid #12adfc;
+  display: inline-block;
+  position: absolute;
+  top: -10px;
+  left: 0;
+}
+
+// 模擬要素 leadの左横に線をつけるコード
+
+@mixin lead-before-line {
+  content: "";
+  height: 21px;
+  border-left: 1px solid #12adfc;
+  display: inline-block;
+  position: absolute;
+  top: 19%;
+  left: -4px;
+}
+
+// footerの共通コード
+@mixin footer-contact-flex {
+  display: block;
+  object-fit: cover;
+  background-size: cover;
+  width: 50%;
+  padding: 10% 0;
+  text-align: center;
+  color: #fff;
 }

@@ -2,7 +2,11 @@
 // (bodyにfont-size:62.5%;をつけたら,1em=10px)//////////////////////////////////
 
 @mixin section-heading {
-  font-size: 10.5em;
+  line-height: 1.2;
+  position: relative;
+  font-size: 7em;
+  font-weight: 600;
+  margin-bottom: 7.5%;
 }
 
 @mixin section-heading-sub {

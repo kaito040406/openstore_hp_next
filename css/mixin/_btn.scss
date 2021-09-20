@@ -1,0 +1,15 @@
+@mixin btn {
+  margin-top: 4%;
+  font-family: -apple-system, BlinkMacSystemFont, MyYuGothicM, "Yu Gothic", Meiryo, "Hiragino kaku Gothic ProN",
+    sans-serif;
+  font-size: 3.5em;
+  padding: 1% 4%;
+}
+
+@mixin btn-border-none {
+  @include btn();
+  color: #12adfc;
+  font-size: 2.5em;
+  border-bottom: 1px solid;
+  border-radius: initial;
+}

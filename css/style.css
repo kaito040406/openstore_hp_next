@@ -486,7 +486,6 @@ html,
 body {
   font-family: -apple-system, BlinkMacSystemFont, MyYuGothicM, "Yu Gothic", Meiryo, "Hiragino kaku Gothic ProN", sans-serif;
   line-height: 1.6;
-  background-color: #f2f2f2;
   font-size: 62.5%;
   font-weight: 400;
   line-height: 2;
@@ -918,7 +917,21 @@ body {
 
 .company-heading {
   line-height: 1.2;
-  font-size: 10.5em;
+  position: relative;
+  font-size: 7em;
+  font-weight: 600;
+  margin-bottom: 7.5%;
+}
+
+.company-heading::before {
+  content: "";
+  width: 45px;
+  height: 1%;
+  border-top: 2px solid #12adfc;
+  display: inline-block;
+  position: absolute;
+  top: -10px;
+  left: 0;
 }
 
 .company-heading-sub {
@@ -927,14 +940,15 @@ body {
 }
 
 .company-text {
-  font-size: 2.8em;
+  font-size: 3.2em;
+  font-weight: 600;
   letter-spacing: 0.05em;
-  padding: 0.65em 0 0.5em;
+  margin: 0.65em 0 0.5em;
 }
 
 .company-content {
   font-size: 2.2em;
-  padding: 0.65em 0 0.5em;
+  margin: 0.65em 0 0.5em;
 }
 
 .company-btn {
@@ -943,6 +957,10 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, MyYuGothicM, "Yu Gothic", Meiryo, "Hiragino kaku Gothic ProN", sans-serif;
   font-size: 3.5em;
   padding: 1% 4%;
+  color: #12adfc;
+  font-size: 2.5em;
+  border-bottom: 1px solid;
+  border-radius: initial;
 }
 
 .company-right {
@@ -951,16 +969,27 @@ body {
 
 .service {
   background-color: #fff;
-}
-
-.service-container {
   margin: 0 10%;
   padding: 5% 0;
 }
 
 .service-heading {
   line-height: 1.2;
-  font-size: 10.5em;
+  position: relative;
+  font-size: 7em;
+  font-weight: 600;
+  margin-bottom: 7.5%;
+}
+
+.service-heading::before {
+  content: "";
+  width: 45px;
+  height: 1%;
+  border-top: 2px solid #12adfc;
+  display: inline-block;
+  position: absolute;
+  top: -10px;
+  left: 0;
 }
 
 .service-heading-sub {
@@ -968,64 +997,7 @@ body {
   font-size: 3em;
 }
 
-.service-item {
-  background-color: #f2f2f2;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 3% 5%;
-  margin-bottom: 5%;
-  border-radius: 40px;
-}
-
-.service-text {
-  width: 60%;
-}
-
-.service-catch-left {
-  color: #12adfc;
-  border-bottom: 2px solid #12adfc;
-  padding-bottom: 0.3em;
-  margin-right: 0.3em;
-  position: relative;
-  bottom: 1rem;
-  letter-spacing: 0.03em;
-  font-size: 3em;
-}
-
-.service-catch-right {
-  font-size: 10em;
-  color: #12adfc;
-  line-height: 1;
-}
-
-.service-name {
-  line-height: 1;
-  font-size: 4.6em;
-  padding: 0.65em 0 0.5em;
-}
-
-.service-lead {
-  font-size: 3em;
-  padding: 0.65em 0 0.5em;
-}
-
-.service-detail {
-  font-size: 2.2em;
-  padding: 0.65em 0 0.5em;
-}
-
-.service-image {
-  width: 25%;
-}
-
-.shopify {
+.service-mask {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1035,16 +1007,86 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 5% 10%;
+}
+
+.service-card {
+  width: 29%;
+}
+
+.service-image {
+  width: 25%;
+  margin: 0 auto 15% auto;
+}
+
+.service-lead {
+  line-height: 1;
+  border-left: 2px solid #12adfc;
+  padding-left: 2.7%;
+  font-weight: 500;
+  font-size: 3em;
+  margin: 0.65em 0 0.5em;
+}
+
+.service-detail {
+  font-size: 2.4em;
+  margin: 0.65em 0 0.5em;
+}
+
+.service-btn {
+  margin-top: 4%;
+  font-family: -apple-system, BlinkMacSystemFont, MyYuGothicM, "Yu Gothic", Meiryo, "Hiragino kaku Gothic ProN", sans-serif;
+  font-size: 3.5em;
+  padding: 1% 4%;
+  color: #12adfc;
+  font-size: 2.5em;
+  border-bottom: 1px solid;
+  border-radius: initial;
+  padding: 0;
+  font-size: 1.4em;
+  width: 12.1%;
+  margin: 4% auto 0 auto;
+}
+
+.shopify {
+  margin: 5% 0 5% 10%;
+}
+
+.shopify-mask {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .shopify-left {
-  width: 55%;
+  width: 40%;
+  padding: 3% 3% 3% 0;
+  position: relative;
+  background-color: #fff;
 }
 
 .shopify-heading {
   line-height: 1.2;
-  font-size: 10.5em;
+  position: relative;
+  font-size: 7em;
+  font-weight: 600;
+  margin-bottom: 7.5%;
+}
+
+.shopify-heading::before {
+  content: "";
+  width: 45px;
+  height: 1%;
+  border-top: 2px solid #12adfc;
+  display: inline-block;
+  position: absolute;
+  top: -10px;
+  left: 0;
 }
 
 .shopify-heading-sub {
@@ -1053,41 +1095,58 @@ body {
 }
 
 .shopify-text {
-  font-size: 2.8em;
+  font-size: 3.2em;
+  font-weight: 600;
   letter-spacing: 0.05em;
-  padding: 0.65em 0 0.5em;
+  margin: 0.65em 0 0.5em;
 }
 
 .shopify-content {
   font-size: 2.2em;
-  padding: 0.65em 0 0.5em;
+  margin: 0.65em 0 0.5em;
 }
 
 .shopify-btn {
-  margin-left: 30%;
   margin-top: 4%;
   font-family: -apple-system, BlinkMacSystemFont, MyYuGothicM, "Yu Gothic", Meiryo, "Hiragino kaku Gothic ProN", sans-serif;
   font-size: 3.5em;
   padding: 1% 4%;
+  color: #12adfc;
+  font-size: 2.5em;
+  border-bottom: 1px solid;
+  border-radius: initial;
 }
 
 .shopify-right {
-  border-radius: 40px;
-  width: 40%;
+  width: 60%;
+  position: absolute;
+  z-index: -1;
+  right: 0;
 }
 
 .news {
   background-color: #fff;
-}
-
-.news-container {
   margin: 0 10%;
   padding: 5% 0;
 }
 
 .news-heading {
   line-height: 1.2;
-  font-size: 10.5em;
+  position: relative;
+  font-size: 7em;
+  font-weight: 600;
+  margin-bottom: 7.5%;
+}
+
+.news-heading::before {
+  content: "";
+  width: 45px;
+  height: 1%;
+  border-top: 2px solid #12adfc;
+  display: inline-block;
+  position: absolute;
+  top: -10px;
+  left: 0;
 }
 
 .news-heading-sub {
@@ -1099,46 +1158,33 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
 .news-card {
-  width: 32%;
+  width: 30%;
   height: auto;
-  padding: 1.5%;
-  background-color: #f2f2f2;
+  padding: 2%;
 }
 
-.news-image {
-  border-radius: 5px;
+.news-time {
+  font-size: 1.4em;
+  margin: 0.65em 0 0.5em;
 }
 
 .news-title {
   margin: 0;
-  font-size: 4.6em;
+  font-size: 2.2em;
 }
 
-.news-time {
-  font-size: 2em;
-  padding: 0.65em 0 0.5em;
-}
-
-.news-text {
-  font-size: 2.6em;
-}
-
-.news-btn {
-  margin-top: 4%;
-  font-family: -apple-system, BlinkMacSystemFont, MyYuGothicM, "Yu Gothic", Meiryo, "Hiragino kaku Gothic ProN", sans-serif;
-  font-size: 3.5em;
-  padding: 1% 4%;
-  font-size: 2.8em;
-  margin: 0;
+.news .css-bhp9pd-MuiPaper-root-MuiCard-root {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .strategy {
@@ -1160,7 +1206,21 @@ body {
 
 .strategy-heading {
   line-height: 1.2;
-  font-size: 10.5em;
+  position: relative;
+  font-size: 7em;
+  font-weight: 600;
+  margin-bottom: 7.5%;
+}
+
+.strategy-heading::before {
+  content: "";
+  width: 45px;
+  height: 1%;
+  border-top: 2px solid #12adfc;
+  display: inline-block;
+  position: absolute;
+  top: -10px;
+  left: 0;
 }
 
 .strategy-heading-sub {
@@ -1169,7 +1229,8 @@ body {
 }
 
 .strategy-text {
-  font-size: 3.6em;
+  font-size: 3.2em;
+  font-weight: 600;
   letter-spacing: 0.05em;
 }
 
@@ -1198,6 +1259,7 @@ body {
 }
 
 .strategy-lead {
+  font-weight: 500;
   font-size: 3em;
 }
 
@@ -1212,6 +1274,51 @@ body {
 
 .footer {
   background-color: #526993;
+  color: #fff;
+}
+
+.footer-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-contact-left {
+  background: url("https://as2.ftcdn.net/v2/jpg/02/36/62/99/1000_F_236629968_cvZT3xpLsf26tuvcJOLaU8xIR1GfPrus.jpg");
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-size: cover;
+  width: 50%;
+  padding: 10% 0;
+  text-align: center;
+  color: #fff;
+}
+
+.footer-contact-lead {
+  font-size: 2em;
+}
+
+.footer-contact-title {
+  font-size: 3em;
+  font-weight: 600;
+}
+
+.footer-contact-right {
+  background: url("https://as1.ftcdn.net/v2/jpg/02/36/73/30/1000_F_236733013_bfndtBM4IRmmUIbFSOns1N7OfV4uxLOO.jpg");
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-size: cover;
+  width: 50%;
+  padding: 10% 0;
+  text-align: center;
   color: #fff;
 }
 

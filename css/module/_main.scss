@@ -7,16 +7,17 @@
     width: 55%;
   }
   &-heading {
-    line-height: 1.2;
     @include section-heading();
+    &::before {
+      @include heading-before-line();
+    }
     &-sub {
       @include heading-bottom();
       @include section-heading-sub();
     }
   }
   &-text {
-    @include font28();
-    letter-spacing: 0.05em;
+    @include text();
     @include text-between();
   }
   &-content {
@@ -25,7 +26,7 @@
   }
   &-btn {
     margin-left: 30%;
-    @include btn();
+    @include btn-border-none();
   }
   &-right {
     width: 40%;
@@ -34,83 +35,75 @@
 
 .service {
   background-color: #fff;
-  &-container {
-    @include container-padding();
-  }
+  @include container-padding();
   &-heading {
-    line-height: 1.2;
     @include section-heading();
+    &::before {
+      @include heading-before-line();
+    }
     &-sub {
       @include heading-bottom();
       @include section-heading-sub();
     }
   }
-  &-item {
-    background-color: #f2f2f2;
+  &-mask {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    padding: 3% 5%;
-    margin-bottom: 5%;
-    border-radius: 40px;
   }
-  &-text {
-    width: 60%;
+  &-card {
+    width: 29%;
   }
-  &-catch {
-    &-left {
-      color: #12adfc;
-      border-bottom: 2px solid #12adfc;
-      padding-bottom: 0.3em;
-      margin-right: 0.3em;
-      position: relative;
-      bottom: 1rem;
-      letter-spacing: 0.03em;
-      @include font30();
-    }
-    &-right {
-      font-size: 10em;
-      color: #12adfc;
-      line-height: 1;
-    }
-  }
-  &-name {
-    line-height: 1;
-    @include font46();
-    @include text-between();
+  &-image {
+    width: 25%;
+    margin: 0 auto 15% auto;
   }
   &-lead {
+    line-height: 1;
+    border-left: 2px solid #12adfc;
+    padding-left: 2.7%;
+    font-weight: 500;
     @include font30();
     @include text-between();
   }
   &-detail {
-    @include font22();
+    @include font24();
     @include text-between();
   }
-  &-image {
-    width: 25%;
+  &-btn {
+    @include btn-border-none();
+    padding: 0;
+    font-size: 1.4em;
+    width: 12.1%;
+    margin: 4% auto 0 auto;
   }
 }
 
 .shopify {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  @include container();
+  @include container-left();
+  &-mask {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
   &-left {
-    width: 55%;
+    width: 40%;
+    padding: 3% 3% 3% 0;
+    position: relative;
+    background-color: #fff;
   }
   &-heading {
-    line-height: 1.2;
     @include section-heading();
+    &::before {
+      @include heading-before-line();
+    }
     &-sub {
       @include heading-bottom();
       @include section-heading-sub();
     }
   }
   &-text {
-    @include font28();
-    letter-spacing: 0.05em;
+    @include text();
     @include text-between();
   }
   &-content {
@@ -118,23 +111,24 @@
     @include text-between();
   }
   &-btn {
-    margin-left: 30%;
-    @include btn();
+    @include btn-border-none();
   }
   &-right {
-    border-radius: 40px;
-    width: 40%;
+    width: 60%;
+    position: absolute;
+    z-index: -1;
+    right: 0;
   }
 }
 
 .news {
   background-color: #fff;
-  &-container {
-    @include container-padding();
-  }
+  @include container-padding();
   &-heading {
-    line-height: 1.2;
     @include section-heading();
+    &::before {
+      @include heading-before-line();
+    }
     &-sub {
       @include heading-bottom();
       @include section-heading-sub();
@@ -142,33 +136,26 @@
   }
   &-item {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
   }
   &-card {
-    width: 32%;
+    width: 30%;
     height: auto;
-    padding: 1.5%;
-    background-color: #f2f2f2;
+    padding: 2%;
   }
   &-image {
-    border-radius: 5px;
+  }
+  &-time {
+    @include font14();
+    @include text-between();
   }
   &-title {
     margin: 0;
-    @include font46();
+    @include font22();
   }
-  &-time {
-    @include font20();
-    @include text-between();
-  }
-  &-text {
-    @include font26();
-  }
-  &-btn {
-    @include btn();
-    @include font28();
-    margin: 0;
+  .css-bhp9pd-MuiPaper-root-MuiCard-root {
+    box-shadow: none;
   }
 }
 
@@ -181,16 +168,17 @@
     width: 55%;
   }
   &-heading {
-    line-height: 1.2;
     @include section-heading();
+    &::before {
+      @include heading-before-line();
+    }
     &-sub {
       @include heading-bottom();
       @include section-heading-sub();
     }
   }
   &-text {
-    @include font36();
-    letter-spacing: 0.05em;
+    @include text();
   }
   &-item {
     display: flex;
@@ -208,6 +196,7 @@
     width: 79%;
   }
   &-lead {
+    font-weight: 500;
     @include font30();
   }
   &-detail {

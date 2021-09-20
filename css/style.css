@@ -957,6 +957,10 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, MyYuGothicM, "Yu Gothic", Meiryo, "Hiragino kaku Gothic ProN", sans-serif;
   font-size: 3.5em;
   padding: 1% 4%;
+  color: #12adfc;
+  font-size: 2.5em;
+  border-bottom: 1px solid;
+  border-radius: initial;
 }
 
 .company-right {
@@ -1255,6 +1259,7 @@ body {
 }
 
 .strategy-lead {
+  font-weight: 500;
   font-size: 3em;
 }
 

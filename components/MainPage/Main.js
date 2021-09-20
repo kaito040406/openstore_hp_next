@@ -19,9 +19,10 @@ export default function Main() {
           <p className="company-content">
             このコロナ禍ではオフライン(対面)縮小・オンライン拡大といった新しい生活様式への変化が進んでいます。そしてこの流れはビジネスにおいても例外ではなく、DXやデジタルシフトを進め、販路拡大を行うことが大きな伴になっています。私たちは、お客さまにとって必要不可欠なパートーナーとして末長く寄り添ってお付き合いすることができる技術と情熱を持った担当者が揃っているという自負があります。
           </p>
-          <Button className="company-btn" variant="contained" color="primary">
+          {/* <Button className="company-btn" variant="contained" color="primary">
             会社情報を見る
-          </Button>
+          </Button> */}
+          <Button className="company-btn">view more→</Button>
         </div>
         <img
           className="company-right company-image"

@@ -11,7 +11,6 @@ export default function FirstPost() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      {/* footerのコードです。 */}
       <Footer />
     </Layout>
   );

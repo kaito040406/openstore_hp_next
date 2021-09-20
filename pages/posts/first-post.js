@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import Link from 'next/link';
+import Footer from '../../components/Footer';
 import Header from '../../components/Header';
 import Layout from '../Layout';
 
@@ -11,12 +11,8 @@ export default function FirstPost() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <h1>First Post</h1>
-      <h2>
-        <Link href="/">
-          <a className="seiya">Back to home</a>
-        </Link>
-      </h2>
+      {/* footerのコードです。 */}
+      <Footer />
     </Layout>
   );
 }

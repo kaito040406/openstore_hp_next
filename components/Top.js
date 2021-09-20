@@ -3,7 +3,6 @@ import Button from '@material-ui/core/Button';
 import * as CANNON from 'cannon';
 import React, { useEffect, useState } from 'react';
 import { Canvas, useFrame } from 'react-three-fiber';
-// import { css, jsx } from '@emotion/core';
 import { useCannon, Provider } from '../src/useCannon';
 
 // 重要コード///////////////////////////////////////////////////////////////////

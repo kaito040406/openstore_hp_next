@@ -871,7 +871,7 @@ body {
 }
 
 .top-left {
-  width: 35%;
+  width: 30%;
 }
 
 .top-heading {
@@ -889,13 +889,13 @@ body {
 }
 
 .top-btn {
-  width: 60%;
+  width: 70%;
   padding: 2% 0;
   font-size: 3em;
 }
 
 .top-right {
-  width: 60%;
+  width: 65%;
 }
 
 .company {

@@ -1,9 +1,10 @@
 import * as THREE from 'three';
 import Button from '@material-ui/core/Button';
 import * as CANNON from 'cannon';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { Canvas, useFrame } from 'react-three-fiber';
 import { useCannon, Provider } from '../src/useCannon';
+import Kanit from './Kanit_Regular.json';
 
 // 重要コード///////////////////////////////////////////////////////////////////
 
@@ -59,7 +60,7 @@ import { useCannon, Provider } from '../src/useCannon';
   <TextMesh args="O" position={[4, 0, 0.2]} />
   <TextMesh args="M" position={[8.5, 0, 0.2]} />
   <TextMesh args="E" position={[13.5, 0, 0.2]} />
-</group>; */
+</group> */
 }
 //////////////////////////////////////////////////////////////////////////////
 
@@ -80,14 +81,47 @@ const Plane = ({ position }) => {
 // 物体のコード
 
 const TextMesh = ({ position, args }) => {
+  const mesh = useRef(null);
+
+  const font = new THREE.FontLoader().parse(Kanit);
+
+  const textOptions = {
+    font,
+    size: 8,
+    height: 2,
+    curveSegments: 32,
+    // font-weight?
+    bevelEnabled: true,
+    // 奥行
+    bevelThickness: 0.05,
+    // 距離感
+    bevelSize: 0.1,
+    // font-weight?
+    bevelOffset: 0.2,
+    // font-weight?
+    bevelSegments: 8,
+  };
+
+  // CANNON.jsを使うためのコード
   const ref = useCannon({ mass: 100000 }, (body) => {
-    body.addShape(new CANNON.Box(new CANNON.Vec3(1, 1, 1)));
+    body.addShape(new CANNON.Box(new CANNON.Vec3(2, 3, 3)));
     body.position.set(...position);
   });
   return (
-    <mesh ref={ref} castShadow receiveShadow>
-      <boxGeometry attach="geometry" args={args} />
-      <meshStandardMaterial attach="material" />
+    // <mesh ref={ref} castShadow receiveShadow>
+    //   <boxGeometry attach="geometry" args={args} />
+    //   <meshStandardMaterial attach="material" />
+    // </mesh>
+    <mesh castShadow receiveShadow position={position} ref={(mesh, ref)}>
+      <textGeometry attach="geometry" args={[args, textOptions]} factor={0.3} />
+      <meshPhysicalMaterial
+        attach="material"
+        color="#22B2FC"
+        // よくわからん
+        roughness={0.5}
+        // 明るさ
+        metalness={0.01}
+      />
     </mesh>
   );
 };
@@ -115,22 +149,23 @@ export default function Top() {
               <ambientLight intensity={0.5} />
               <spotLight
                 intensity={0.6}
-                position={[30, 30, 50]}
+                position={[90, 90, 90]}
                 angle={0.2}
                 penumbra={1}
-                castShadow
               />
               <Provider>
                 {/* 地面の呼び出し */}
-                <Plane position={[0, 0, -5]} />
+                <Plane position={[0, 0, -14]} />
                 {/* 物体の呼び出し */}
-                <TextMesh position={[1, 0, 1]} args={[2, 2, 2]} />
-                <TextMesh position={[1, 0, 1]} args={[1, 1, 5]} />
-                <TextMesh position={[2, 1, 5]} args={[3, 3, 3]} />
-                <TextMesh position={[0, 0, 6]} args={[2, 4, 2]} />
-                <TextMesh position={[-1, 1, 8]} args={[2, 3, 2]} />
-                <TextMesh position={[0, 2, 3]} args={[5, 5, 1]} />
-                <TextMesh position={[2, -1, 13]} args={[1, 1, 10]} />
+                <TextMesh args="O" position={[-34, 0, -1]} />
+                <TextMesh args="P" position={[-26, 0.5, 3]} />
+                <TextMesh args="E" position={[-18, 0, 5]} />
+                <TextMesh args="N" position={[-11, -0.5, 7]} />
+                <TextMesh args="S" position={[-3, 0.5, 9]} />
+                <TextMesh args="T" position={[4, 1.5, 11]} />
+                <TextMesh args="O" position={[10, 1, 13]} />
+                <TextMesh args="R" position={[18, -0.5, 15]} />
+                <TextMesh args="E" position={[27, 0, 17]} />
               </Provider>
             </Canvas>
           </div>

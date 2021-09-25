@@ -99,12 +99,12 @@ const TextMesh = ({ position, args }) => {
     // font-weight?
     bevelOffset: 0.2,
     // font-weight?
-    bevelSegments: 5,
+    bevelSegments: 8,
   };
 
   // CANNON.jsを使うためのコード
   const ref = useCannon({ mass: 100000 }, (body) => {
-    body.addShape(new CANNON.Box(new CANNON.Vec3(1, 1, 1)));
+    body.addShape(new CANNON.Box(new CANNON.Vec3(2, 3, 3)));
     body.position.set(...position);
   });
   return (
@@ -116,11 +116,11 @@ const TextMesh = ({ position, args }) => {
       <textGeometry attach="geometry" args={[args, textOptions]} factor={0.3} />
       <meshPhysicalMaterial
         attach="material"
-        color="red"
+        color="#22B2FC"
         // よくわからん
         roughness={0.5}
         // 明るさ
-        metalness={0.1}
+        metalness={0.01}
       />
     </mesh>
   );
@@ -149,31 +149,23 @@ export default function Top() {
               <ambientLight intensity={0.5} />
               <spotLight
                 intensity={0.6}
-                position={[30, 30, 50]}
+                position={[90, 90, 90]}
                 angle={0.2}
                 penumbra={1}
-                castShadow
               />
               <Provider>
                 {/* 地面の呼び出し */}
                 <Plane position={[0, 0, -10]} />
                 {/* 物体の呼び出し */}
-                {/* <TextMesh position={[1, 0, 1]} args="W" />
-                <TextMesh position={[1, 0, 1]} args={('W', [0, 0, 0])} />
-                <TextMesh position={[2, 1, 5]} args={[3, 3, 3]} />
-                <TextMesh position={[0, 0, 6]} args={[2, 4, 2]} />
-                <TextMesh position={[-1, 1, 8]} args={[2, 3, 2]} />
-                <TextMesh position={[0, 2, 3]} args={[5, 5, 1]} />
-                <TextMesh position={[2, -1, 13]} args={[1, 1, 10]} /> */}
-                <group>
-                  <TextMesh args="W" position={[-30, 0, 1]} />
-                  <TextMesh args="E" position={[2, 1, 5]} />
-                  <TextMesh args="L" position={[0, 0, 6]} />
-                  <TextMesh args="C" position={[0, 0, 0.2]} />
-                  <TextMesh args="O" position={[-1, 1, 8]} />
-                  <TextMesh args="M" position={[0, 2, 3]} />
-                  <TextMesh args="E" position={[2, -1, 13]} />
-                </group>
+                <TextMesh args="O" position={[-34, 0, -1]} />
+                <TextMesh args="P" position={[-26, 0.5, 3]} />
+                <TextMesh args="E" position={[-18, 0, 5]} />
+                <TextMesh args="N" position={[-11, -0.5, 7]} />
+                <TextMesh args="S" position={[-3, 0.5, 9]} />
+                <TextMesh args="T" position={[4, 1.5, 11]} />
+                <TextMesh args="O" position={[10, 1, 13]} />
+                <TextMesh args="R" position={[18, -0.5, 15]} />
+                <TextMesh args="E" position={[27, 0, 17]} />
               </Provider>
             </Canvas>
           </div>

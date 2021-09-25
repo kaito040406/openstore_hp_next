@@ -155,7 +155,7 @@ export default function Top() {
               />
               <Provider>
                 {/* 地面の呼び出し */}
-                <Plane position={[0, 0, -10]} />
+                <Plane position={[0, 0, -14]} />
                 {/* 物体の呼び出し */}
                 <TextMesh args="O" position={[-34, 0, -1]} />
                 <TextMesh args="P" position={[-26, 0.5, 3]} />

@@ -71,9 +71,9 @@
     "hostingamplifyhosting": {
       "Type": "AWS::CloudFormation::Stack",
       "Properties": {
-        "TemplateURL": "https://s3.amazonaws.com/amplify-openstorehp-dev-180913-deployment/amplify-cfn-templates/hosting/amplifyhosting-template.json",
+        "TemplateURL": "https://s3.amazonaws.com/amplify-openstore-dev-103747-deployment/amplify-cfn-templates/hosting/amplifyhosting-template.json",
         "Parameters": {
-          "appId": "d23yvw75f2605d",
+          "appId": "d1xxveqve59zey",
           "type": "manual",
           "env": "dev"
         }

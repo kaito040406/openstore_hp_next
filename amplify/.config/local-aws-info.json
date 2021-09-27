@@ -1,7 +1,7 @@
 {
   "dev": {
     "configLevel": "project",
-    "useProfile": false,
-    "awsConfigFilePath": "/Users/hasegawakaito/.amplify/awscloudformation/ESgK7yop9h"
+    "useProfile": true,
+    "profileName": "amplify-C7E1t"
   }
 }

@@ -72,7 +72,7 @@ const Plane = ({ position }) => {
   });
   return (
     <mesh ref={ref} receiveShadow>
-      <planeBufferGeometry attach="geometry" args={[1000, 1000]} />
+      <planeBufferGeometry attach="geometry" args={[1000, 4000]} />
       <meshPhongMaterial attach="material" opacity="0" />
     </mesh>
   );
@@ -87,7 +87,7 @@ const TextMesh = ({ position, args }) => {
 
   const textOptions = {
     font,
-    size: 8,
+    size: 9,
     height: 2,
     curveSegments: 32,
     // font-weight?
@@ -108,10 +108,6 @@ const TextMesh = ({ position, args }) => {
     body.position.set(...position);
   });
   return (
-    // <mesh ref={ref} castShadow receiveShadow>
-    //   <boxGeometry attach="geometry" args={args} />
-    //   <meshStandardMaterial attach="material" />
-    // </mesh>
     <mesh castShadow receiveShadow position={position} ref={(mesh, ref)}>
       <textGeometry attach="geometry" args={[args, textOptions]} factor={0.3} />
       <meshPhysicalMaterial
@@ -157,9 +153,9 @@ export default function Top() {
                 {/* 地面の呼び出し */}
                 <Plane position={[0, 0, -14]} />
                 {/* 物体の呼び出し */}
-                <TextMesh args="O" position={[-34, 0, -1]} />
-                <TextMesh args="P" position={[-26, 0.5, 3]} />
-                <TextMesh args="E" position={[-18, 0, 5]} />
+                <TextMesh args="O" position={[-31, 0, -1]} />
+                <TextMesh args="P" position={[-27, 0.5, 2]} />
+                <TextMesh args="E" position={[-26, 0, 5]} />
                 <TextMesh args="N" position={[-11, -0.5, 7]} />
                 <TextMesh args="S" position={[-3, 0.5, 9]} />
                 <TextMesh args="T" position={[4, 1.5, 11]} />
